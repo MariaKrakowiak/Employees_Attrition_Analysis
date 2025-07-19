@@ -84,9 +84,10 @@ def page_overview():
 
        While the original dataset contains a wide range of features, I focused on selecting only those that had the most significant impact on model performance. This approach helped simplify the model while retaining predictive power and interpretability. It also makes the final application user friendly.
 
-       The whole analysis and source code are available here: [GitHub Repository – Workers Attrition Analysis](https://github.com/MariaKrakowiak/Workers_Attrition_Analysis).
+       The whole analysis and source code are available here: [GitHub Repository – Employees Attrition Analysis](https://github.com/MariaKrakowiak/Employees_Attrition_Analysis).
 
     </div>
+    
 
        """, unsafe_allow_html=True)
     st.markdown("<hr style='border: 1px solid #ccc;'>", unsafe_allow_html=True)
