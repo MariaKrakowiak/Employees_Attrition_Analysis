@@ -99,7 +99,8 @@ def page_overview():
         ### 👈 Use the tabs on the left to explore data or predict if employee is likely to leave or stay in the company.
         """
     )
-    st.image("../images/people.jpg", use_container_width=True)
+    img_path = os.path.join(os.path.dirname(__file__), "..", "images", "people.jpg")
+    st.image(img_path, use_container_width=True)
 
 
 # ------------------ Page: Data Plot ------------------ #
@@ -278,7 +279,8 @@ def main():
     model = load_model("../model/trained_model.sav")
 
     try:
-        df = pd.read_csv("../data/WA_Fn-UseC_-HR-Employee-Attrition.csv")
+        csv_path = os.path.join(os.path.dirname(__file__), "..", "data", "WA_Fn-UseC_-HR-Employee-Attrition.csv")
+        df = pd.read_csv(csv_path)
     except Exception:
         df = pd.DataFrame()
 
