@@ -20,7 +20,7 @@ To run the application locally:
 1. Go to the GitHub repository and download the ZIP of the project.
 2. Unzip the folder to your preferred location.
 3. Open a terminal or command prompt.
-4. Navigate to the folder where the project was extracted:
+4. Navigate to the folder where the project was extracted (app folder):
 
    ```bash
    cd path_to_folder

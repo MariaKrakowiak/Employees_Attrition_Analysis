@@ -96,7 +96,7 @@ def page_overview():
         ### 👈 Use the tabs on the left to explore data or predict if employee is likely to leave or stay in the company.
         """
     )
-    st.image("./images/people.jpg", use_container_width=True)
+    st.image("../images/people.jpg", use_container_width=True)
 
 
 # ------------------ Page: Data Plot ------------------ #
@@ -272,10 +272,10 @@ def main():
 
     page = st.sidebar.selectbox("Select Page", ["Overview", "Explore Data", "Predict"])
 
-    model = load_model("./model/trained_model.sav")
+    model = load_model("../model/trained_model.sav")
 
     try:
-        df = pd.read_csv("./data/WA_Fn-UseC_-HR-Employee-Attrition.csv")
+        df = pd.read_csv("../data/WA_Fn-UseC_-HR-Employee-Attrition.csv")
     except Exception:
         df = pd.DataFrame()
 
