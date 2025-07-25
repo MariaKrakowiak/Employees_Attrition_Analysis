@@ -3,6 +3,7 @@ import pandas as pd
 import streamlit as st
 import matplotlib.pyplot as plt
 import seaborn as sns
+import os
 
 # ------------------ Constants ------------------ #
 CATEGORICAL_COLUMNS = [
@@ -51,8 +52,10 @@ DISPLAY_NAMES = {
 
 
 # ------------------ Model Loading ------------------ #
-def load_model(path: str):
-    with open(path, 'rb') as file:
+def load_model(relative_path: str):
+    base_dir = os.path.dirname(__file__)  # directory of current script
+    model_path = os.path.join(base_dir, relative_path)
+    with open(model_path, 'rb') as file:
         return pickle.load(file)
 
 
